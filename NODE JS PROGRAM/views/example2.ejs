@@ -1,0 +1,20 @@
+<!-- Create a views folder and an EJS file:
+Inside your project directory, create a folder named views. In this folder, create an EJS file (e.g., index.ejs) that will be used to render the HTML with dynamic data. -->
+ 
+<!-- views/index.ejs -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= data.title%></title>
+</head>
+<body>
+  <h1><%= data.title%></h1>
+  <p><%= data.message%></p>
+</body>
+</html>
+ 
+<!-- In this EJS file, <%= data.title %> and <%= data.message %> are placeholders that will be replaced with the actual values when rendering. -->
+ 
