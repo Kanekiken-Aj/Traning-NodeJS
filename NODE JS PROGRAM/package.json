@@ -2,10 +2,10 @@
   "name": "node-js-program",
   "version": "1.0.0",
   "description": "",
-  "main": "bycrypt.js",
+  "main": "swaggerAPIDecumentation.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon node bycrypt.js"
+    "start": "nodemon node swaggerAPIDecumentation.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
     "nodemon": "^3.0.3",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^8.0.0",
     "pug": "^3.0.2"
   }
 }
