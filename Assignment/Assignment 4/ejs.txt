@@ -1,0 +1,1 @@
+the pages are in the views folder and the main file is executed using the server.js file

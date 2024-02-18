@@ -9,13 +9,15 @@ app.use(cookieParser());
 
 app.get('/setcookie', (req, res) => {
     res.cookie('mycookie', 'HelloWorld', { maxAge: 900000, httpOnly: true });
+    res.cookie('theme', 'dark', { maxAge: 900000, httpOnly: true });
     res.send('Cookie is set');
 });
 
 // Define a route to read the cookie
 app.get('/getcookie', (req, res) => {
     const mycookie = req.cookies.mycookie;
-    res.send('Value of mycookie: ' + mycookie);
+    const theme =req.cookies.theme;
+    res.send('Value of mycookie: ' + mycookie , theme);
 });
 
 app.listen(port, () => {

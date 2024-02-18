@@ -1,0 +1,27 @@
+Write the code for authentication using jsonwebtoken library and implement it to create the token and login using the token.
+
+
+http://localhost:3000/login
+{
+    "username": "user1",
+    "password":"password1"
+}
+
+output:--- 
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyMSIsImlhdCI6MTcwODI1MDE4MCwiZXhwIjoxNzA4MjUzNzgwfQ.lKkDmMPBYd9rW0Fwd5X-JXKV_a0Kf-UMeMfGEv1oV6c"
+}
+
+
+
+
+output form '/protected on passing the autherazitation and token into header
+{
+  "message": "Protected route accessed successfully",
+  "user": {
+      "id": 1,
+      "username": "user1",
+      "iat": 1708250180,
+      "exp": 1708253780
+  }
+}
