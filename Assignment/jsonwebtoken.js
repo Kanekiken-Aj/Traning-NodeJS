@@ -33,7 +33,7 @@ app.post('/login', (req, res) => {
   } else {
     res.status(401).json({ message: 'Invalid username or password' });
   }
-});
+}); 
 
 // Middleware to verify JWT token
 function verifyToken(req, res, next) {
